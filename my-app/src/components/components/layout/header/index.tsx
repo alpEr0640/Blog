@@ -8,12 +8,12 @@ import { BottomArrowIcon } from "./icons";
 
 export function Header() {
   return (
-    <div className="flex flex-row justify-around items-center h-20 bg-primary">
-      <div className="w-[200px] flex flex-col justify-center items-center">
+    <div className="grid grid-cols-12 justify-around items-center h-20 bg-primary ">
+      <div className="col-span-12 min-[850px]:col-span-3 min-[850px]:col-start-2 col-start-0 xs:col-span-12  justify-center items-center text-center">
         <div>ALPER SONAT</div>
         <div>Kişisel Yaşam Koçu</div>
       </div>
-      <div>
+      <div className="col-span-8 hidden min-[850px]:flex flex justify-center items-center  ">
         {" "}
         <Nvg.NavigationMenu>
           <Nvg.NavigationMenuList>
@@ -78,7 +78,7 @@ export function Header() {
                 <Nvg.NavigationMenuLink className="w-full">
                   Otizm{" "}
                 </Nvg.NavigationMenuLink>
-                <Nvg.NavigationMenuLink >
+                <Nvg.NavigationMenuLink>
                   Dikkat Eksikliği ve Hiperaktivite Bozukluğu (DEHB){" "}
                 </Nvg.NavigationMenuLink>
               </Nvg.NavigationMenuList>
